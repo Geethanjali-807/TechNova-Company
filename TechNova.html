@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNOVA Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: grey;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: whitesmoke;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h1 {
+            margin-bottom: 20px;
+        }
+        .form-container img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .from-group label{
+            width: 100%;
+            padding: 10px;
+            
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+        .form-group a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+        .form-group a:hover {
+            text-decoration: underline;
+        }
+        .submit-btn {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <img src="d:\Full_stack_Developers_practical_project\TechNova_image.jpg" alt="TECHNOVA Logo">
+        <h1>TECHNOV Registration Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First">
+                <input type="text" id="lastName" name="lastName" placeholder="Last">
+            </div>
+            <div class="form-group">
+                <label for="birthDate">Birth Date</label>
+                <input type="date" id="birthDate" name="birthDate">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com">
+            </div>
+            <div class="from-group">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                <option value="" disabled selected>-- Select a Course --</option>
+                <option value="Full Stack Development ">Full Stack Development</option>
+                <option value="Pythpn">Python</option>
+                <option value="Java">Java</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">terms of service</a>.</label>
+            </div>
+            <div class="form-group">
+                <label for="captcha">Verification</label>
+                <div>
+                    <input type="checkbox" id="captcha" name="captcha" required>
+                    <span>I'm not a robot</span>
+                </div>
+            </div>
+              <button type="button" class="submit-btn"><a href="d:\Full_stack_Developers_practical_project\Prank.html"><b>SUBMIT</b></a></button>
+        </form>
+    </div>
+</body>
+</html>

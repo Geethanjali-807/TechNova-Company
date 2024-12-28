@@ -1,0 +1,30 @@
+body {
+    background-color:azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.alert-box {
+    font-family: Arial, sans-serif;
+    background-color: #ffcccc;
+    border: 4px double #ff0000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+ h1,h2 {
+    color: red;
+    
+}
+ p {
+    color: black;
+    
+}
+
+ol {
+    text-align: left;
+    margin: 20px 0;
+}
